@@ -12,7 +12,9 @@ you have termux installed in your android
  pkg i fzf -y 
 ```
 # zoxide
-pkg i zoxide -y 
+```
+pkg i zoxide -y
+```
 # T-Header
 ```
 git clone https://github.com/remo7777/T-Header.git
