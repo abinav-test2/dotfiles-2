@@ -5,11 +5,14 @@ you have termux installed in your android
 # git
 ```
  pkg i git -y 
+```
 # my requirements of my dotfiles installation
 # fzf
+```
  pkg i fzf -y 
+```
 # zoxide
- pkg i zoxide -y 
+pkg i zoxide -y 
 # T-Header
 ```
 git clone https://github.com/remo7777/T-Header.git
