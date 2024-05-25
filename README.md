@@ -30,7 +30,8 @@ pkg i wget -y
 
 wget https://raw.githubusercontent.com/abinav-test2/dotfiles-2/main/.zshrc
 ```
-# install zsh (> [!IMPORTANT] <)
+# install zsh 
+# important 
 ```
  pkg i zsh -y
 ```
