@@ -1,0 +1,12 @@
+2024-05-30 16:19:53.774 [error] Unable to retrieve release information from known identifier paths.
+2024-05-30 16:20:21.994 [info] Getting Manifest... ms-vscode.js-debug
+2024-05-30 16:20:24.259 [info] Installing extension: ms-vscode.js-debug
+2024-05-30 16:20:28.316 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /data/data/com.termux/files/usr/lib/code-oss/resources/app/out/bootstrap-amd.js
+- /data/data/com.termux/files/usr/lib/code-oss/resources/app/out/bootstrap-fork.js
+2024-05-30 16:20:28.318 [info] Extension signature verification is not done: ms-vscode.js-debug
+2024-05-30 16:20:29.139 [info] Extracted extension to file:///data/data/com.termux/files/home/.vscode-oss/extensions/ms-vscode.js-debug-1.90.0-universal: ms-vscode.js-debug
+2024-05-30 16:20:29.180 [info] Renamed to /data/data/com.termux/files/home/.vscode-oss/extensions/ms-vscode.js-debug-1.90.0-universal
+2024-05-30 16:20:29.213 [info] Extracting extension completed. ms-vscode.js-debug
+2024-05-30 16:20:29.295 [info] Extension installed successfully: ms-vscode.js-debug

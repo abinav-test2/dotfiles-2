@@ -131,6 +131,8 @@ else
         alias la='ls --color=auto -a'
         alias ll='ls --color=auto -Fhl'
         alias ll.='ls --color=auto -Fhl -d .*'
+        alias pbcopy='xsel --input --clipboard'
+        alias pbpaste='xsel --output --clipboard'
 fi
 
 ## Safety.
@@ -146,9 +148,8 @@ alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-lvim="NVIM_APPNAME=LunarVim nvim"
 alias nvim-chad="NVIM_APPNAME=NvChad nvim"
 alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
-alias nvim-normal="NVIM_APPNAME=NormalNvim nvim"
 function nvims() {
-  items=("default" "LazyVim" "NvChad" "AstroNvim" "NormalNvim" "LunarVim")
+  items=("default" "LazyVim" "NvChad" "AstroNvim" "LunarVim" )
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
@@ -156,7 +157,7 @@ function nvims() {
   elif [[ $config == "default" ]]; then                        config=""                                                fi
   NVIM_APPNAME=$config nvim $@                             }
 
-bindkey -s ^a "nvims\n"
+bindkey -s ^e "nvims\n"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"

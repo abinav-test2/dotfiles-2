@@ -1,0 +1,7 @@
+2024-05-27 17:54:30.102 [error] Error: Unable to retrieve mac address (unexpected format)
+    at R (/data/data/com.termux/files/usr/lib/code-oss/resources/app/out/vs/code/electron-main/main.js:38:98822)
+    at c (/data/data/com.termux/files/usr/lib/code-oss/resources/app/out/vs/code/electron-main/main.js:40:37048)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /data/data/com.termux/files/usr/lib/code-oss/resources/app/out/vs/code/electron-main/main.js:40:36933
+2024-05-27 17:54:30.102 [info] update#setState disabled
+2024-05-27 17:54:30.102 [info] update#ctor - updates are disabled as there is no update URL
