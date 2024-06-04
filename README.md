@@ -37,3 +37,7 @@ wget https://raw.githubusercontent.com/abinav-test2/dotfiles-2/main/.zshrc
 ```
  pkg i zsh -y
 ```
+# copy your .zshrc into your cloned repo 
+```
+cp -r ~/dotfiles-2/.zshrc
+```
