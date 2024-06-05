@@ -149,9 +149,9 @@ alias nvim-lvim="NVIM_APPNAME=LunarVim nvim"
 alias nvim-chad="NVIM_APPNAME=NvChad nvim"
 alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
 alias nvim-config="NVIM_APPNAME=nvim-config nvim"
-alias nvim-doom "NVIM_APPNAME=doom-nvim nvim"
+alias nvim-doom="NVIM_APPNAME=doom-nvim nvim"
 function nvims() {
-  items=("default" "LazyVim" "NvChad" "AstroNvim" "LunarVim" "nvim-config" "nvim-doom")
+  items=("default" "LazyVim" "NvChad" "AstroNvim" "LunarVim" "nvim-config" "nvim-doom" )
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
@@ -159,7 +159,7 @@ function nvims() {
   elif [[ $config == "default" ]]; then                        config=""                                                fi
   NVIM_APPNAME=$config nvim $@                             }
 
-bindkey -s ^e "nvims\n"
+bindkey -s ^f "nvims\n"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"
